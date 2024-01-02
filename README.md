@@ -7,6 +7,12 @@ Discord Bot Written in Golang to Provide Regularly Scheduled Updates on Campus N
 
 1. Installation of [Go](https://go.dev/dl/) and [SQLite3](https://www.sqlite.org/download.html) on Host Machine
 2. Create a [Discord Bot](https://discord.com/developers/applications) on the Discord Developer Portal
+3. Placing the Generated Bot Token into a ```**.env**``` file along with the Channel ID you want the Bot to Run in
+__**example .env file**___
+```
+TOKEN=YOURTOKENHERE
+CHANNEL_ID=CHANNEL_IDHERE
+```
 
 ## Compilation and Run Steps
 
