@@ -29,7 +29,7 @@ func main() {
 	// Use third-party library to load environment variables
 	err := godotenv.Load()
 	if err != nil {
-		//	log.Fatal("Error Loading Environment Variables")
+		log.Fatal("Error Loading Environment Variables")
 	}
 
 	// Bot Info
@@ -46,7 +46,7 @@ func main() {
 	c := cron.New()
 
 	// Check Every 15 Minutes
-	c.AddFunc("0/15 0/23 * * *", func() {
+	c.AddFunc("* * * * *", func() {
 		var con sync.WaitGroup
 		// Allow for Multiple URLS to be Read from the Feed
 		feedURLs := []string{
