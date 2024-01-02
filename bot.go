@@ -45,8 +45,8 @@ func main() {
 	// Build Cron Job Scheduler
 	c := cron.New()
 
-	// Check Every 15 Minutes
-	c.AddFunc("* * * * *", func() {
+	// Check Every Hour
+	c.AddFunc("0 * * * *", func() {
 		var con sync.WaitGroup
 		// Allow for Multiple URLS to be Read from the Feed
 		feedURLs := []string{
